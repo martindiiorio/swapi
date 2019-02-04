@@ -12,7 +12,7 @@ class ListFilms extends Component {
             return (
               <div className="col-sm-6 col-md-3 my-1" key={keys}>
                 <div className="card">
-                  <img width="100" src={`/img/episode${film.episode_id}.jpeg`} className="card-img-top" alt={film.title} />
+                  <img width="100" src={`./img/episode${film.episode_id}.jpeg`} className="card-img-top" alt={film.title} />
                   <div className="card-body">
                     <h5 className="card-title text-truncate">{film.title}</h5>
                     <p className="card-text"><small className="text-muted">{`Episode Nº: ${film.episode_id}`}</small></p>
