@@ -1,14 +1,19 @@
 import React, { Component } from 'react';
-import Navbar from './components/Navbar'
+import Navbar from './components/Navbar';
+import { BrowserRouter, Route } from 'react-router-dom';
 import Films from './components/Films';
+import DetailFilms from './components/DetailFilms';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Navbar />
-        <Films />
-      </div>
+        <BrowserRouter>
+          <div className="App">
+            <Navbar />
+            <Route exact path="/" component={Films} />
+            <Route path="/:films_id" component={DetailFilms} />
+          </div>
+        </BrowserRouter>
     );
   }
 }
