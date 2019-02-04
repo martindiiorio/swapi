@@ -52,7 +52,7 @@ class DetailFilms extends Component {
         <h2 className="display-4">{this.state.film.title}</h2>
         <p className="lead">{this.state.film.director}</p>
         <hr className="my-4" />
-        <p>{this.state.film.producer}</p>
+        <p>Producers: {this.state.film.producer}</p>
         <p>Episode Nº: {this.state.film.episode_id}</p>
         <p className="font-italic">{this.state.film.opening_crawl}</p>
         <p>Species: {this.state.specie.map(s => s.name).join(", ")}</p>
