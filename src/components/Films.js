@@ -18,6 +18,7 @@ class Films extends Component {
       .then((res) => {
         const films = res.data.results;
         const keys = Object.keys(films)
+        // console.log(keys)
         this.setState({
           films: res.data.results,
           keys: keys
@@ -25,7 +26,8 @@ class Films extends Component {
       })
   }
 
-  reorderByDate = event => {
+  reorderByDate = () => {
+    // console.log(...films.release_date);
     var films = this.state.films.map(item => ({ ...item }));
     films.sort((a, b) =>
       a.release_date > b.release_date
@@ -37,7 +39,8 @@ class Films extends Component {
     this.setState({ films });
   };
 
-  reorderByEpisode = films => {
+  reorderByEpisode = () => {
+    //console.log(...films.episode_id);
     var films = this.state.films.map(item => ({ ...item }));
     films.sort((a, b) =>
       a.episode_id > b.episode_id ? 1 : b.episode_id > a.episode_id ? -1 : 0
