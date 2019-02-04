@@ -4,9 +4,6 @@ Serves no real purpose, but is useful as an example or boilerplate for a React.
 
 ![SWAPI Screenshot](https://raw.githubusercontent.com/martindiiorio/swapi/master/screenshot.png)
 
-## Demo
-[Click here](https://martindiiorio.github.io/swapi/) for a demo.
-
 ## Dependencies
 * Npm - `npm install`
 
