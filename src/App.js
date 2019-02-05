@@ -7,7 +7,7 @@ import DetailFilms from './components/DetailFilms';
 class App extends Component {
   render() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/swapi">
           <div className="App">
             <Navbar />
             <Route exact path="/" component={Films} />

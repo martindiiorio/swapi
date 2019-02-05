@@ -17,6 +17,7 @@ class Films extends Component {
     return axios.get('https://swapi.co/api/films')
       .then((res) => {
         const films = res.data.results;
+        console.log(...films)
         const keys = Object.keys(films)
         // console.log(keys)
         this.setState({
