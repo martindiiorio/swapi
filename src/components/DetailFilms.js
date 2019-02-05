@@ -14,7 +14,6 @@ class DetailFilms extends Component {
       this.setState({
         film: res.data
       });
-      console.log(res)
     });
   }
 
